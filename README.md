@@ -5,7 +5,7 @@ languages:
 products:
   - azure
   - azure-redis-cache
-description: "Devops na Pratica - creates a multi-container application in an Azure Kubernetes Service (AKS) cluster."
+description: "Devops na Pratica - Teste 1 - creates a multi-container application in an Azure Kubernetes Service (AKS) cluster."
 ---
 
 # Azure Voting App
