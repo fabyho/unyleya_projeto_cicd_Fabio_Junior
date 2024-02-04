@@ -25,11 +25,8 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile'
-- task: Docker@2
-  inputs:
-    containerRegistry: 'Container registry'
-    repository: 'posdevopsacr1'
-    command: 'build'
-    Dockerfile: '**/Dockerfile'
-        tags: |
-          $(tag)
+            containerRegistry: 'Container registry'
+            repository: 'posdevopsacr1'
+            command: 'build'
+            Dockerfile: '**/Dockerfile'
+            containerRegistry: $(dockerRegistryServiceConnection)
