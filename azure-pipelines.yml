@@ -25,7 +25,6 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile'
-            containerRegistry: 'Container registry'
             repository: 'posdevopsacr1'
             command: 'build'
             Dockerfile: '**/Dockerfile'
