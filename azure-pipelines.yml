@@ -25,5 +25,5 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile'
-        tags: |
+        tags:
           $(tag)
