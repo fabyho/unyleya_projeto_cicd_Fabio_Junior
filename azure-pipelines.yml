@@ -3,7 +3,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- master
+- main
 
 resources:
 - repo: self
@@ -25,5 +25,5 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile'
-        repository: 'posdevopsacr1'
-        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
